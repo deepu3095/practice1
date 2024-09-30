@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+    animation: deepu 8s infinite;
+}
+.object{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: animate 10s infinite;
+    position: relative;
+}
+@keyframes animate  {
+    0%{
+        top: 0px;
+        left:0px;
+        background-color: red;
+    }
+    25%{
+        top: 0px;
+        left: 1400px;
+        background-color: green;
+    }
+    50%{
+        top: 500px;
+        left: 1400px;
+        background-color: rgb(17, 191, 207);
+    }
+    75%{
+        top: 500px;
+        left:0;
+        background-color: darkorange;
+
+    }
+    100%{
+        top: 0px;
+        background-color: red;
+
+    }
+}
+@keyframes deepu {
+    from{background-color: rgb(10, 9, 9);
+    }
+    to{
+        background-color: rgb(242, 244, 242);
+    }
+} 
